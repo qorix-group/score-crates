@@ -15,4 +15,6 @@ package(default_visibility = ["//visibility:public"])
 exports_files([
     "qnx8_iceoryx2.patch",
     "iceoryx2_bb_derive_macros_readme.patch",
+    "qnx7_iceoryx2_bb_posix_socketpair_pipe.patch",
+    "qnx7_iceoryx2_cal_process_local_ipc_event.patch",
 ])
