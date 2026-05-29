@@ -118,6 +118,11 @@ crate.spec(
     package = "iceoryx2-bb-posix-qnx8",
     rev = "9f5622f554de48a7a296e1a5a71200b01e35a502",
 )
+crate.annotation(
+    crate = "iceoryx2-bb-posix-qnx8",
+    patches = ["//patches:qnx7_iceoryx2_bb_posix_socketpair_pipe.patch"],
+    repositories = ["crate_index"],
+)
 
 #iceoryx2 does not yet support QNX8 correctly so we patch
 crate.annotation(
@@ -149,6 +154,11 @@ crate.spec(
     git = "https://github.com/qorix-group/iceoryx2.git",
     package = "iceoryx2-cal-qnx8",
     rev = "9f5622f554de48a7a296e1a5a71200b01e35a502",
+)
+crate.annotation(
+    crate = "iceoryx2-cal-qnx8",
+    patches = ["//patches:qnx7_iceoryx2_cal_process_local_ipc_event.patch"],
+    repositories = ["crate_index"],
 )
 crate.spec(
     package = "indicatif",
